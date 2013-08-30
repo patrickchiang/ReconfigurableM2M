@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wsnremote"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- ***********INPROC ADDITIONS*********** -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- ***********INPROC ADDITIONS*********** -->
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <service
+            android:name="com.wsnremote.SimpleChatService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.wsnremote.SimpleChatService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.wsnremote.SelectUserActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.wsnremote" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wsnremote.ChatActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.wsnremote.ChatActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wsnremote.Transfers"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.wsnremote.Transfers" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wsnremote.ModulesActions"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.wsnremote.ModulesActions" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.wsnremote.SimpleChatRegisterApp"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.wsnremote.REGISTER_APP" />
+            </intent-filter>
+        </service>
+
+        <!-- INPROC ADDITIONS -->
+        <!-- Unboxing and Cloud registration -->
+
+        <activity
+            android:name="com.intel.startup.CloudAuthorizationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:permission="android.permission.INTERNET"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.intel.startup.NewUnbox"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <service
+            android:name="com.intel.inproclib.InProcService"
+            android:permission="android.permission.INTERNET" >
+            <intent-filter>
+                <action android:name="com.wsnremote.IN_PROC_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <!-- INPROC ADDITIONS -->
+        <activity
+            android:name="com.wsnremote.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+    </application>
+
+</manifest>

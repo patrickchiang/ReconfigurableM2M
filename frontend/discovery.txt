@@ -1,0 +1,1 @@
+{"id":"htc_asia_tw HTC One V","capabilities":["Less Than","Light Sensor","Proximity Sensor","Accel Sensor Gx","Accel Sensor Gy","Accel Sensor Gz","Vibrate","Number"]}

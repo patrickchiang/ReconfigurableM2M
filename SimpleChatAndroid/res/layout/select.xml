@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/capView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" >
+    </ListView>
+
+   	<EditText
+   	    android:id="@+id/location"
+   	    android:layout_width="119dp"
+   	    android:layout_height="wrap_content"
+   	    android:ems="10"
+   	    android:hint="@string/location"
+   	    android:inputType="number|phone"
+   	    android:text="1" >
+
+    </EditText>
+
+    <ListView
+        android:id="@+id/userListView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+    </ListView>
+
+</LinearLayout>

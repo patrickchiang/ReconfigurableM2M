@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Gadget>
+    <Category>Sample Applications</Category>
+    <Strings Locale="en">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Run the sample application.]]></Description>
+    </Strings>
+    <Strings Locale="fr">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Trouver et détruire les bunkers cachés de votre adversaire.]]></Description>
+    </Strings>
+    <Strings Locale="it">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Trova e distruggi i bunker nascosti del tuo avversario.]]></Description>
+    </Strings>
+    <Strings Locale="de">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Finde und zerstöre die versteckten Bunker deines Feindes.]]></Description>
+    </Strings>
+    <Strings Locale="es">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Busca y destruye los búnkeres escondidos de tu oponente.]]></Description>
+    </Strings>
+    <Strings Locale="ar">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[إبحث عن  الخنادق الخفية لخصومك ودمرها]]></Description>
+    </Strings>
+    <Strings Locale="pt-BR">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Encontre e destrua os refúgios escondidos de seus oponentes.]]></Description>
+    </Strings>
+    <Strings Locale="nl">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Zoek en vernietig de verborgen bunkers van je tegenspeler.]]></Description>
+    </Strings>
+    <Strings Locale="ja">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[相手の隠されたバンカーを見つけ出し破壊します]]></Description>
+    </Strings>
+    <Strings Locale="ko">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[귀하 적의 숨겨진 벙커를 찾고 파괴하십시오.]]></Description>
+    </Strings>
+    <Strings Locale="ru">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[Найти и уничтожить скрытые бункеры противника.]]></Description>
+    </Strings>
+    <Strings Locale="zh-HanS">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[寻找并摧毁敌人隐藏的碉堡。]]></Description>
+    </Strings>
+    <Strings Locale="zh-HanT">
+      <Title>Simple Chat</Title>
+      <Description><![CDATA[查詢并摧毀對手的隱藏地堡。]]></Description>
+    </Strings>
+</Gadget>

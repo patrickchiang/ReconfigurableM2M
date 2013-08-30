@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sensors">
+        <item>Light Sensor</item>
+        <item>Proximity Sensor</item>
+        <item>Accelerometer</item>
+   	</string-array>
+    <string-array name="actuators">
+        <item>Vibrate</item>
+        <item>Light</item>
+        <item>Camera</item>
+        <item>Notify</item>
+   	</string-array>
+</resources>

@@ -1,0 +1,1 @@
+[{"moduleId":"0","inputModuleId":"0","instanceId":"0","value":"true","deviceId":"htc_asia_tw HTC One V"}]

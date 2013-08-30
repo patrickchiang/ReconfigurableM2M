@@ -1,0 +1,68 @@
+<!--
+This is the front page of the frontend.
+Author: Patrick Chiang
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FrontEnd</title>
+		<script src="frontend.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="jquery.selectBoxIt.min.js"></script>
+		<script src="jquery.jsPlumb-1.4.1-all.js"></script>
+		<link type="text/css" rel="stylesheet" href="jquery.selectBoxIt.css" />
+		<link rel="stylesheet" type="text/css" href="frontend.css">
+		<link rel="icon" type="image/png" href="favicon.png">
+	</head>
+	<body>
+		<div id="toolbar">
+			<span class="barText">Toolbar:</span>
+			<button type="button" id="addModule">
+				Add Module
+			</button>
+			<button type="button" id="saveWorkspace">
+				Save Workspace
+			</button>
+			<button type="button" id="loadWorkspace">
+				Load Workspace
+			</button>
+			<button type="button" id="deploy">
+				Deploy
+			</button>
+		</div>
+		<div id="overlay">
+			<div></div>
+		</div>
+		<div id="template">
+			<div class="closeBtn"></div>
+			<p>
+				<select class="moduleType">
+					<option>Module Type</option>
+					<option data-inputs="1" data-outputs="0">Vibrate</option>
+					<option data-inputs="1" data-outputs="0">Camera</option>
+					<option data-inputs="1" data-outputs="0">Ring</option>
+					<option data-inputs="1" data-outputs="0">Flashlight</option>
+					<option data-inputs="2" data-outputs="1">Less Than</option>
+					<option data-inputs="0" data-outputs="1">Number</option>
+					<option data-inputs="0" data-outputs="1">Light Sensor</option>
+					<option data-inputs="0" data-outputs="1">Proximity Sensor</option>
+					<option data-inputs="0" data-outputs="1">Accel Sensor Gx</option>
+					<option data-inputs="0" data-outputs="1">Accel Sensor Gy</option>
+					<option data-inputs="0" data-outputs="1">Accel Sensor Gz</option>
+					<option data-inputs="0" data-outputs="1">Time</option>
+				</select>
+			<p>
+				<input type="text" class="deviceId" disabled="disabled" placeholder="Device ID"/>
+			</p>
+			<p>
+				<input type="text" class="moduleId" disabled="disabled" placeholder="Module Number" />
+			</p>
+			<p>
+				<input type="text" class="inputValue" disabled="disabled" placeholder="Input Value"/>
+			</p>
+		</div>
+		<div id="workspace"></div>
+	</body>
+</html>
